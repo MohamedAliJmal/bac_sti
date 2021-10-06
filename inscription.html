@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    
+</head>
+<body >
+    <form>
+    <fieldset >
+        <legend>
+            Inscription d'un patient
+        </legend>
+        
+        <input type="text" name="" id="cin" placeholder="Ncin">
+        <br>
+        <input type="text" name="" id="nom" placeholder="Nom">
+        <br>
+        <input type="text" name="" id="prn" placeholder="prénom">
+        <br>
+        <label>état civil: </label>
+        
+        <label>marié</label>
+        <input type="radio" name="état_civil" id="é_c" value="marié">
+        <label>divorcé</label>
+        <input type="radio" name="état_civil" id="é_c" value="divorcé">
+
+        <label>célibataire</label>
+        <input type="radio" name="état_civil" id="é_c" value="célibataire"> 
+        
+        <br>
+        <input type="text" placeholder="nombre d'enfants" id="Nef">
+        <br>
+        
+        <label>assurance</label>
+        <select id="select">
+            <option value="santé public">santé public</option>
+            <option value="médecin de famille">médecin de famille</option>
+            <option value="rembourssement">rembourssement des dépenses</option>
+        </select>
+        <br>
+        <button type="button" onclick="verif()">inscrire</button>
+        <button type="reset">annuler</button>
+
+
+    </fieldset>
+</form>
+<script src="verif.js"></script>
+    
+</body>
+</html>
